@@ -1,0 +1,8 @@
+# # Prerequirements:
+pymongo==4.5.0       # MongoDB driver for Python
+rich==13.3.5         # For colorful console UI
+pyfiglet==0.8.post1  # For ASCII banners
+bcrypt==4.0.1        # For password hashing
+python-dotenv==1.0.0 # For environment variables (MongoDB URI)
+
+

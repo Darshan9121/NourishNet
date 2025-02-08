@@ -1,0 +1,60 @@
+# 🚀 NourishNet - Project Setup Guide
+
+Follow these steps to set up and run the NourishNet project.
+
+## ✅ 1. Clone the Repository
+```bash
+git clone <repo-url>
+cd NourishNet
+```
+
+## ✅ 2. Create a Virtual Environment
+```bash
+python -m venv .venv
+```
+
+### Activate Virtual Environment:
+- **Windows:**
+  ```bash
+  .venv\Scripts\activate
+  ```
+- **Mac/Linux:**
+  ```bash
+  source .venv/bin/activate
+  ```
+
+## ✅ 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+_If `requirements.txt` is missing, install manually:_
+```bash
+pip install pymongo python-dotenv
+```
+
+## ✅ 4. Create `.env` File
+Inside the project folder, create a `.env` file and add:
+```ini
+MONGO_URI=mongodb://localhost:27017
+DATABASE_NAME=NourishNet
+```
+
+## ✅ 5. Start MongoDB
+Make sure MongoDB is running:
+```bash
+mongod --dbpath <your-db-path>
+```
+
+## ✅ 6. Run the Project
+```bash
+python main_menu.py
+```
+
+## ✅ 7. Troubleshooting
+- **ModuleNotFoundError?** Ensure dependencies are installed inside `.venv`.
+- **Database connection error?** Check `.env` file and MongoDB status.
+- **Still facing issues?** Run:
+  ```bash
+  pip install --upgrade pip
+  ```
+
